@@ -70,8 +70,9 @@ public class BaseTests {
 		caps.setCapability("os", "Windows");
 		caps.setCapability("os_version", "10");
 		caps.setCapability("browser", "Chrome");
-		caps.setCapability("browser_version", "80");
-		caps.setCapability("name", "abdessalemguesmi1's First Test");
+		caps.setCapability("browser_version", "latest");
+		caps.setCapability("browserstack.idleTimeout", 180);
+		caps.setCapability("name", "Abdessalem");
 		caps.setCapability("name", "Google_" + iTestResult.getMethod().getMethodName());
 		driver = new RemoteWebDriver(new URL(URL), caps);
 		driver.manage().window().maximize();
